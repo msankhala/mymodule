@@ -1,0 +1,7 @@
+mymodule.view:
+  path: '/admin/structure/mymodule/view'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\MyModuleContoller::view'
+    _title: 'My module view'
+  requirements:
+    _permission: 'access content'

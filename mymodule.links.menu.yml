@@ -1,0 +1,6 @@
+mymodule.view:
+  title: My module
+  route_name: mymodule.view
+  description: 'My module custom view.'
+  parent: system.admin
+  weight: 10
