@@ -1,7 +1,15 @@
 mymodule.view:
   path: '/admin/structure/mymodule/view'
   defaults:
-    _controller: '\Drupal\mymodule\Controller\MyModuleContoller::view'
+    _controller: '\Drupal\mymodule\Controller\MyModuleController::view'
     _title: 'My module view'
+  requirements:
+    _permission: 'access content'
+
+mymodule.settings:
+  path: '/admin/structure/mymodule/settings'
+  defaults:
+    _form: 'Drupal\mymodule\Form\MyModuleConfigForm'
+    _title: 'My module settings'
   requirements:
     _permission: 'access content'
